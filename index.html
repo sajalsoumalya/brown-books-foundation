@@ -3,92 +3,111 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Brown Books Foundation — Sustainability & Learning</title>
-<meta name="description" content="A non-profit for sustainability & learning. We collect old books and donate them to students who need them, so no good book ends up in a landfill.">
+<title>Brown Books Foundation</title>
+<meta name="description" content="A non-profit for sustainability and learning. We collect old books and donate them to students who need them.">
 <meta property="og:title" content="Brown Books Foundation">
-<meta property="og:description" content="We collect old books and donate them to students who need them. Daily eco tips, green tech & reuse ideas.">
+<meta property="og:description" content="We collect old books and donate them to students who need them. Join, donate, or request a book.">
 <meta property="og:image" content="assets/logo.jpg">
 <link rel="icon" href="assets/logo.jpg">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<header class="nav">
-  <a href="#top" class="brand"><img src="assets/logo.jpg" alt="Brown Books Foundation logo"><span>Brown Books<small>Foundation</small></span></a>
-  <nav>
-    <a href="#mission">Mission</a>
-    <a href="#donate">Donate Books</a>
-    <a href="#feed">Latest</a>
-    <a href="#contact">Contact</a>
+<header class="top">
+  <a href="#top" class="brand" aria-label="Brown Books Foundation home">
+    <img src="assets/logo.jpg" alt="" width="32" height="32">
+    <span>Brown Books</span>
+  </a>
+  <nav aria-label="Main">
+    <a href="#join">Join</a>
+    <a href="#stats">Stats</a>
+    <a href="#feed">Feed</a>
+    <a href="#donate">Donate</a>
   </nav>
 </header>
 
-<section id="top" class="hero">
-  <div class="hero-text">
-    <p class="eyebrow">Non-profit · Sustainability · Learning</p>
-    <h1>No good book ends up in a landfill.</h1>
-    <p class="lede">We collect old books and donate them to students who need them. Daily eco tips, green tech and reuse ideas, in English and Hindi.</p>
-    <div class="cta-row">
-      <a class="btn primary" href="#donate">Donate a book</a>
-      <a class="btn ghost" href="#donate-request">Request a book</a>
-    </div>
-  </div>
-  <div class="hero-art" aria-hidden="true">
-    <img src="assets/logo.jpg" alt="">
+<main id="top">
+
+<section class="hero">
+  <p class="kicker">Non-profit · Sustainability · Learning</p>
+  <h1>Old books, new readers.</h1>
+  <p class="lede">We collect used books and pass them to students who need them. Less waste, more learning.</p>
+  <div class="actions">
+    <a class="btn primary" href="#join">Join the community</a>
+    <a class="btn" href="#donate">Donate</a>
   </div>
 </section>
 
-<section id="mission" class="pillars">
-  <h2>What we do</h2>
-  <div class="grid">
-    <article class="card">
-      <span class="icon">📚</span>
-      <h3>Book donation</h3>
-      <p>Collect old textbooks, novels and exam guides, then pass them to students who can't afford new ones.</p>
-    </article>
-    <article class="card">
-      <span class="icon">🌱</span>
-      <h3>Sustainability series</h3>
-      <p>One practical eco habit or green fact, every day. Small changes that cut waste at home.</p>
-    </article>
-    <article class="card">
-      <span class="icon">🛠️</span>
-      <h3>Tools & green tech</h3>
-      <p>Free web tools for learning and reuse, and technology that saves energy or waste.</p>
-    </article>
+<section id="join" class="block">
+  <h2>Join the community</h2>
+  <p class="muted">Pick how you want to help.</p>
+  <div class="options">
+    <a class="option" href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8V6.5c0-.8.4-1.2 1.2-1.2H17V2h-2.6C11.9 2 11 3.6 11 5.6V8H9v3h2v11h3V11h2.4l.4-3H14z"/></svg>
+      <div><strong>Follow on Facebook</strong><span>Daily posts, polls and updates</span></div>
+    </a>
+    <a class="option" href="#donate">
+      <svg class="solid" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.4-9.3-8.6C1.1 9.6 2.6 6 6 6c2 0 3.4 1.2 4 2.4C10.6 7.2 12 6 14 6c3.4 0 4.9 3.6 3.3 6.4C19 16.6 12 21 12 21z"/></svg>
+      <div><strong>Donate a book</strong><span>Send books you no longer need</span></div>
+    </a>
+    <a class="option" href="#request">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h12a3 3 0 0 1 3 3v11H7a3 3 0 0 1-3-3V5zm0 0v11a3 3 0 0 1 3-3h12"/></svg>
+      <div><strong>Request a book</strong><span>Tell us the subject and class</span></div>
+    </a>
+    <a class="option" href="#poll">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 19V9m7 10V5m7 14v-7"/></svg>
+      <div><strong>Answer the poll</strong><span>Reply to today's question on Facebook</span></div>
+    </a>
   </div>
 </section>
 
-<section id="donate" class="donate">
-  <div class="donate-inner">
-    <h2>Give a book, give a chance</h2>
-    <p>Have books you no longer need? Send them to us and we will match them with a student.</p>
-    <ol class="steps">
-      <li><strong>Gather</strong> your old books. Textbooks, novels and guides are all useful.</li>
-      <li><strong>Message us</strong> on Facebook with your city and roughly how many books you have.</li>
-      <li><strong>Drop off</strong> or arrange a pickup. We'll confirm the details with you.</li>
-    </ol>
+<section id="stats" class="block stats">
+  <h2>Stats corner</h2>
+  <dl class="stat-grid">
+    <div><dt>Followers</dt><dd id="stat-followers">—</dd></div>
+    <div><dt>Posts, last 7 days</dt><dd id="stat-posts">—</dd></div>
+    <div><dt>Last updated</dt><dd id="stat-updated">—</dd></div>
+  </dl>
+  <p class="fine">Live numbers from our Facebook page, refreshed on each site update.</p>
+</section>
+
+<section id="feed" class="block">
+  <h2>Latest from Facebook</h2>
+  <p class="muted">Top 5 posts by reactions and comments, newest on ties.</p>
+  <div id="feed-list" class="feed"><p class="muted">Loading…</p></div>
+  <p><a class="link" href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">See all posts on Facebook →</a></p>
+</section>
+
+<section id="donate" class="block donate">
+  <h2>Donate, freely</h2>
+  <p>Give what you can. Every contribution helps us buy, sort and ship books to students.</p>
+  <p class="amount">Minimum <strong>$1</strong> · Any amount · For the good will</p>
+  <div class="actions">
+    <a class="btn primary" href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">Donate via Facebook</a>
   </div>
-  <div id="donate-request" class="request">
-    <h3>Need a book?</h3>
-    <p>Tell us the subject and class. We'll do our best to find a copy near you.</p>
+  <p class="fine">Donations are voluntary. Message our page if you'd like a receipt or another way to give.</p>
+</section>
+
+<section id="request" class="block">
+  <h2>Need a book?</h2>
+  <p>Tell us the subject and class. We'll look for a copy near you.</p>
+  <div class="actions">
+    <a class="btn" href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">Ask on Facebook</a>
   </div>
 </section>
 
-<section id="feed" class="feed">
-  <h2>Latest from our page</h2>
-  <p class="muted">Recent posts from our Facebook page.</p>
-  <div id="feed-list" class="feed-list"><p class="muted">Loading…</p></div>
-  <p><a class="btn ghost" href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">See all posts on Facebook</a></p>
+<section id="poll" class="block poll">
+  <h2>Today's poll</h2>
+  <p>Answer on our Facebook page, where the poll lives. Your reply counts.</p>
+  <div class="actions">
+    <a class="btn" href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">Vote on Facebook</a>
+  </div>
 </section>
 
-<section id="contact" class="contact">
-  <h2>Contact</h2>
-  <p>The fastest way to reach us is a message on our <a href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">Facebook page</a>.</p>
-</section>
+</main>
 
 <footer>
-  <p>© Brown Books Foundation · A non-profit for sustainability & learning.</p>
+  <p>© Brown Books Foundation · A non-profit for sustainability and learning.</p>
 </footer>
 
 <script src="app.js"></script>
