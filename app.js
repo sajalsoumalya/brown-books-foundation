@@ -70,7 +70,7 @@
       }
       list.innerHTML = data.posts.map(function (p, i) {
         var media = p.image
-          ? '<a class="media" href="' + esc(p.url) + '" target="_blank" rel="noopener"><img src="' + esc(p.image) + '" alt="Photo from our post" loading="lazy" width="720" height="720"></a>'
+          ? '<a class="media" href="' + esc(p.url) + '" target="_blank" rel="noopener"><img src="' + esc(p.image) + '" alt="Photo shared on our Facebook page" loading="lazy" width="720" height="720"></a>'
           : '';
         return '<article class="post">' + media +
           '<div class="body">' +
