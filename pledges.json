@@ -1,0 +1,4 @@
+{
+  "note": "Real pledges only. Add an entry when a pledge is confirmed. Fields: name (first name and last initial, or as the donor agrees), months, date (ISO, UTC). Leave empty until there is real data.",
+  "pledges": []
+}

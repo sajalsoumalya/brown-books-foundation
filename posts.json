@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-15T10:37:59+00:00",
+  "generated": "2026-10-15T11:27:06+00:00",
   "rule": "top 5 by engagement (reactions + 2×comments + 3×shares), newest first on ties",
   "posts": [
     {
@@ -10,7 +10,7 @@
       "reactions": 0,
       "comments": 0,
       "shares": 0,
-      "score": 0
+      "image": "assets/posts/1518254586997515.jpg"
     },
     {
       "id": "1798955826801396_1518177357005238",
@@ -20,7 +20,7 @@
       "reactions": 0,
       "comments": 0,
       "shares": 0,
-      "score": 0
+      "image": "assets/posts/1518177357005238.jpg"
     },
     {
       "id": "1798955826801396_1518105660345741",
@@ -30,7 +30,7 @@
       "reactions": 0,
       "comments": 0,
       "shares": 0,
-      "score": 0
+      "image": "assets/posts/1518105660345741.jpg"
     },
     {
       "id": "1798955826801396_1518035550352752",
@@ -40,7 +40,7 @@
       "reactions": 0,
       "comments": 0,
       "shares": 0,
-      "score": 0
+      "image": "assets/posts/1518035550352752.jpg"
     },
     {
       "id": "1798955826801396_1517523023737338",
@@ -50,7 +50,7 @@
       "reactions": 0,
       "comments": 0,
       "shares": 0,
-      "score": 0
+      "image": "assets/posts/1517523023737338.jpg"
     }
   ]
 }
