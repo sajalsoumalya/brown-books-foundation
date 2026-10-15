@@ -19,7 +19,6 @@
     <span>Brown Books</span>
   </a>
   <nav aria-label="Main">
-    <a href="#join">Join</a>
     <a href="#stats">Stats</a>
     <a href="#feed">Feed</a>
     <a class="cta" href="#pledge">Pledge $1</a>
@@ -36,7 +35,7 @@
     <div class="actions">
       <a class="btn primary" href="#pledge">Pledge $1 / month
         <svg viewBox="0 0 24 24" aria-hidden="true" class="arrow"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a class="btn" href="#join">Join the community</a>
+      <a class="btn" href="#pledge">Join with a pledge</a>
     </div>
     <ul class="proof">
       <li><strong id="proof-pledges">—</strong> monthly pledges</li>
@@ -51,47 +50,40 @@
 
 <div class="wave" aria-hidden="true"><svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C240,80 480,0 720,40 C960,80 1200,0 1440,40 L1440,80 L0,80 Z"/></svg></div>
 
-<section id="join" class="reveal">
-  <div class="section-head">
-    <h2>Join the community</h2>
-    <p>Join with a $1 monthly pledge, and follow us to stay connected.</p>
-  </div>
-  <div class="options">
-    <a class="option" href="#pledge">
-      <span class="icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-      </span>
-      <strong>Pledge $1 a month</strong>
-      <span class="desc">A small monthly commitment that keeps books moving.</span>
-    </a>
-    <a class="option" href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">
-      <span class="icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
-      </span>
-      <strong>Follow on Facebook</strong>
-      <span class="desc">Daily posts, tips and updates in English and Hindi.</span>
-    </a>
-    <a class="option" href="#pledge">
-      <span class="icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
-      </span>
-      <strong>Pledge $1 a month</strong>
-      <span class="desc">A monthly pledge that keeps books reaching students.</span>
-    </a>
-    <a class="option" href="#request">
-      <span class="icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-      </span>
-      <strong>Request a book</strong>
-      <span class="desc">Tell us the subject and class. We'll look for a copy near you.</span>
-    </a>
-    <a class="option" href="#poll">
-      <span class="icon" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-      </span>
-      <strong>Answer the poll</strong>
-      <span class="desc">Reply to today's question on Facebook. Your answer counts.</span>
-    </a>
+<section id="pledge" class="reveal pledge">
+  <div class="pledge-card">
+    <div class="pledge-text">
+      <span class="pill"><span class="dot"></span> Monthly pledge</span>
+      <h2>Join the community at <span class="nowrap"><em>$1 a month</em></span></h2>
+      <p>Your pledge is $1 every month. It pays for shelving, sorting and shipping books to students. Choose how many months you'd like to commit to, from 1 to 12.</p>
+      <ul class="pledge-list">
+        <li>Cancel any time</li>
+        <li>Any amount above $1 welcome</li>
+        <li>Receipt on request</li>
+      </ul>
+      <div class="actions">
+        <a id="pledge-go" class="btn primary" href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">Pledge via Facebook</a>
+      </div>
+      <p class="fine">Pledges are voluntary. Message our page to set up a monthly contribution.</p>
+    </div>
+
+    <div class="dial" id="dial" role="slider" tabindex="0"
+         aria-label="Number of months to pledge" aria-valuemin="1" aria-valuemax="12" aria-valuenow="3"
+         aria-valuetext="$1 a month for 3 months, $3 in total">
+      <svg viewBox="-20 -20 240 240" aria-hidden="true">
+        <circle class="track" cx="100" cy="100" r="86"/>
+        <g class="ticks"><line class="tick" x1="100.0" y1="26.0" x2="100.0" y2="20.0"/><line class="tick" x1="137.0" y1="35.9" x2="140.0" y2="30.7"/><line class="tick" x1="164.1" y1="63.0" x2="169.3" y2="60.0"/><line class="tick" x1="174.0" y1="100.0" x2="180.0" y2="100.0"/><line class="tick" x1="164.1" y1="137.0" x2="169.3" y2="140.0"/><line class="tick" x1="137.0" y1="164.1" x2="140.0" y2="169.3"/><line class="tick" x1="100.0" y1="174.0" x2="100.0" y2="180.0"/><line class="tick" x1="63.0" y1="164.1" x2="60.0" y2="169.3"/><line class="tick" x1="35.9" y1="137.0" x2="30.7" y2="140.0"/><line class="tick" x1="26.0" y1="100.0" x2="20.0" y2="100.0"/><line class="tick" x1="35.9" y1="63.0" x2="30.7" y2="60.0"/><line class="tick" x1="63.0" y1="35.9" x2="60.0" y2="30.7"/></g>
+        <circle class="progress" id="dial-progress" cx="100" cy="100" r="86"/>
+        <g id="dial-knob" class="knob">
+          <circle cx="0" cy="0" r="11"/>
+        </g>
+      </svg>
+      <div class="dial-center">
+        <span class="dial-total" id="dial-total">$3</span>
+        <span class="dial-label" id="dial-label">3 months</span>
+        <span class="dial-per">in total · $1/mo</span>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -150,40 +142,49 @@
   <p style="margin-top:24px"><a class="btn" href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">See all posts on Facebook</a></p>
 </section>
 
-<section id="pledge" class="reveal pledge">
-  <div class="pledge-card">
-    <div class="pledge-text">
-      <span class="pill"><span class="dot"></span> Monthly pledge</span>
-      <h2>Join the community at <span class="nowrap"><em>$1 a month</em></span></h2>
-      <p>Your pledge is $1 every month. It pays for shelving, sorting and shipping books to students. Choose how many months you'd like to commit to, from 1 to 12.</p>
-      <ul class="pledge-list">
-        <li>Cancel any time</li>
-        <li>Any amount above $1 welcome</li>
-        <li>Receipt on request</li>
-      </ul>
-      <div class="actions">
-        <a id="pledge-go" class="btn primary" href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">Pledge via Facebook</a>
-      </div>
-      <p class="fine">Pledges are voluntary. Message our page to set up a monthly contribution.</p>
-    </div>
 
-    <div class="dial" id="dial" role="slider" tabindex="0"
-         aria-label="Number of months to pledge" aria-valuemin="1" aria-valuemax="12" aria-valuenow="3"
-         aria-valuetext="$1 a month for 3 months, $3 in total">
-      <svg viewBox="-20 -20 240 240" aria-hidden="true">
-        <circle class="track" cx="100" cy="100" r="86"/>
-        <g class="ticks"><line class="tick" x1="100.0" y1="26.0" x2="100.0" y2="20.0"/><line class="tick" x1="137.0" y1="35.9" x2="140.0" y2="30.7"/><line class="tick" x1="164.1" y1="63.0" x2="169.3" y2="60.0"/><line class="tick" x1="174.0" y1="100.0" x2="180.0" y2="100.0"/><line class="tick" x1="164.1" y1="137.0" x2="169.3" y2="140.0"/><line class="tick" x1="137.0" y1="164.1" x2="140.0" y2="169.3"/><line class="tick" x1="100.0" y1="174.0" x2="100.0" y2="180.0"/><line class="tick" x1="63.0" y1="164.1" x2="60.0" y2="169.3"/><line class="tick" x1="35.9" y1="137.0" x2="30.7" y2="140.0"/><line class="tick" x1="26.0" y1="100.0" x2="20.0" y2="100.0"/><line class="tick" x1="35.9" y1="63.0" x2="30.7" y2="60.0"/><line class="tick" x1="63.0" y1="35.9" x2="60.0" y2="30.7"/></g>
-        <circle class="progress" id="dial-progress" cx="100" cy="100" r="86"/>
-        <g id="dial-knob" class="knob">
-          <circle cx="0" cy="0" r="11"/>
-        </g>
-      </svg>
-      <div class="dial-center">
-        <span class="dial-total" id="dial-total">$3</span>
-        <span class="dial-label" id="dial-label">3 months</span>
-        <span class="dial-per">in total · $1/mo</span>
-      </div>
-    </div>
+
+<section id="ways" class="reveal">
+  <div class="section-head">
+    <h2>Ways to help</h2>
+    <p>Pledge, follow, request a book, or vote in the poll. Each one keeps us connected.</p>
+  </div>
+  <div class="options">
+    <a class="option" href="#pledge">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+      </span>
+      <strong>Pledge $1 a month</strong>
+      <span class="desc">A small monthly commitment that keeps books moving.</span>
+    </a>
+    <a class="option" href="https://www.facebook.com/brownbooksfoundation/" target="_blank" rel="noopener">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+      </span>
+      <strong>Follow on Facebook</strong>
+      <span class="desc">Daily posts, tips and updates in English and Hindi.</span>
+    </a>
+    <a class="option" href="#pledge">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14z"/><path d="M4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5"/></svg>
+      </span>
+      <strong>Pledge $1 a month</strong>
+      <span class="desc">A monthly pledge that keeps books reaching students.</span>
+    </a>
+    <a class="option" href="#request">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+      </span>
+      <strong>Request a book</strong>
+      <span class="desc">Tell us the subject and class. We'll look for a copy near you.</span>
+    </a>
+    <a class="option" href="#poll">
+      <span class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+      </span>
+      <strong>Answer the poll</strong>
+      <span class="desc">Reply to today's question on Facebook. Your answer counts.</span>
+    </a>
   </div>
 </section>
 
