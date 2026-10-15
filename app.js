@@ -32,19 +32,30 @@
     return bits.join('');
   }
 
-  // Stats (real values exported from the Facebook API)
+  // Stats band: real values from stats.json. Numbers count up once, unless reduced motion is requested.
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function countUp(el, to) {
+    if (!el) return;
+    if (reduce || typeof to !== 'number') { el.textContent = typeof to === 'number' ? to.toLocaleString('en-IN') : '—'; return; }
+    var start = null, dur = 900;
+    function step(t) {
+      if (start === null) start = t;
+      var k = Math.min(1, (t - start) / dur), eased = 1 - Math.pow(1 - k, 3);
+      el.textContent = Math.round(to * eased).toLocaleString('en-IN');
+      if (k < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
   fetch('stats.json', { cache: 'no-store' })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (s) {
-      var f = typeof s.followers === 'number' ? s.followers.toLocaleString('en-IN') : '—';
-      var pl = typeof s.pledge_count === 'number' ? s.pledge_count.toLocaleString('en-IN') : '—';
-      var p = typeof s.posts_last_7_days === 'number' ? String(s.posts_last_7_days) : '—';
-      ['proof-pledges', 'stat-pledges'].forEach(function (id) {
-        var el = document.getElementById(id); if (el) el.textContent = pl;
-      });
-      var sf = document.getElementById('stat-followers'); if (sf) sf.textContent = f;
-      var sp = document.getElementById('stat-posts'); if (sp) sp.textContent = p;
-      var su = document.getElementById('stat-updated'); if (su) su.textContent = fmt(s.generated) || '—';
+      countUp(document.getElementById('stat-pledges'), s.pledge_count);
+      var note = document.getElementById('pledge-note');
+      if (note && s.pledge_count === 0) note.textContent = 'Be the first to pledge';
+      countUp(document.getElementById('stat-followers'), s.followers);
+      countUp(document.getElementById('stat-posts'), s.posts_last_7_days);
+      var su = document.getElementById('stat-updated');
+      if (su) { su.textContent = fmt(s.generated) || '—'; if (s.generated) su.setAttribute('datetime', s.generated); }
     })
     .catch(function () { /* leave the dashes in place */ });
 

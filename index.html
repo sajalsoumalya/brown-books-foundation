@@ -37,14 +37,31 @@
         <svg viewBox="0 0 24 24" aria-hidden="true" class="arrow"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       <a class="btn" href="#pledge">Join with a pledge</a>
     </div>
-    <ul class="proof">
-      <li><strong id="proof-pledges">—</strong> monthly pledges</li>
-      <li><strong>$1</strong> minimum, any amount</li>
-      <li><strong>Daily</strong> posts in EN &amp; HI</li>
-    </ul>
+    
   </div>
   <div class="hero-art">
     <img src="assets/hero.svg" alt="A stack of books with a green sprout growing from the top" width="640" height="520">
+  </div>
+</section>
+
+<section id="stats" class="stats-band" aria-labelledby="stats-title">
+  <h2 id="stats-title" class="sr-only">Our numbers</h2>
+  <div class="stats-card">
+  <ul class="stats-strip">
+    <li class="stat-item">
+      <span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 2v20M17 6H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+      <div><span class="stat-value" id="stat-pledges" data-count="0">—</span><span class="stat-label">Monthly pledges</span><span class="stat-note" id="pledge-note"></span></div>
+    </li>
+    <li class="stat-item">
+      <span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="4"/><path d="M2 21a7 7 0 0 1 14 0M17 11a3 3 0 1 0 0-6M22 21a6 6 0 0 0-4-5.6"/></svg></span>
+      <div><span class="stat-value" id="stat-followers" data-count="0">—</span><span class="stat-label">Followers</span></div>
+    </li>
+    <li class="stat-item">
+      <span class="stat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg></span>
+      <div><span class="stat-value" id="stat-posts" data-count="0">—</span><span class="stat-label">Posts in 7 days</span></div>
+    </li>
+  </ul>
+  <p class="stats-foot">Live from our Facebook page · updated <time id="stat-updated">—</time></p>
   </div>
 </section>
 
@@ -108,30 +125,7 @@
   </div>
 </section>
 
-<section id="stats" class="stats-wrap reveal">
-  <div class="section-head">
-    <h2>Stats corner</h2>
-    <p>Live numbers from our Facebook page, refreshed with each site update.</p>
-  </div>
-  <div class="stat-grid">
-    <div class="stat">
-      <div class="label">Monthly pledges</div>
-      <div class="value" id="stat-pledges">—</div>
-    </div>
-    <div class="stat">
-      <div class="label">Followers</div>
-      <div class="value" id="stat-followers">—</div>
-    </div>
-    <div class="stat">
-      <div class="label">Posts, last 7 days</div>
-      <div class="value" id="stat-posts">—</div>
-    </div>
-    <div class="stat">
-      <div class="label">Last updated</div>
-      <div class="value small" id="stat-updated">—</div>
-    </div>
-  </div>
-</section>
+
 
 <section id="feed" class="reveal">
   <div class="section-head">
